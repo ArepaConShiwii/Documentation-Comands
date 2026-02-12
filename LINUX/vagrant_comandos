@@ -1,0 +1,17 @@
+COMANDOS Vgrant -----------------------------------
+
+Vgrant init : para descargar contenido
+
+Vagrant up : para iniciar vm 
+
+vagrant halt : para apagar maquina virtual 
+
+vagrant whoami : nombre actual del usuario
+
+vagrant ssh : conectarse a la maquina virtual
+
+ifconfig: ver adaptadores de red 
+
+free - m : ver memoria de la maquina 
+
+touch : crear archivos 
