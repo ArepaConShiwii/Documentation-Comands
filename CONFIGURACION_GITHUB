@@ -1,0 +1,9 @@
+ git --version
+ git config --global user.name ""
+ git config --global user.email uSER@gmail.com
+ git init = Inicializar Directorio  
+ code (Nombre del archivo) = creacion de archivo
+ git log = muestra todos los commits hechos hasta la fecha 
+ git status = estado de los commmits realizados 
+ git commit file1 -m "nombre del archivo"
+ ID de los commits = (9385c59649a7c3ea764d3b8d4a0de6ef4094a6c6)
