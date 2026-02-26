@@ -18,3 +18,4 @@ git log --oneline
 git branch --merged = ver las ramas fusionadas 
 git merge (nombre de la rama) = fusionar ramas 
 Git Fetch = Descarga datos pero no toca tu código.
+git checkout origin/main  -- (nombre de la carpeta)= para traer carpetas de repositorio remoto al local 
