@@ -1,0 +1,15 @@
+docker run (nombre de la imagen)
+docker ps = lista todos los contenedores en funcionamiento + la informacion 
+docker ps -a = Lista de todos los contenedores esten o no en funcionamiento 
+docker stop + nombre o ID = detiene el contenedor 
+docker rm + nombre o ID = Elimina de forma permanente un contenedor que se encuentra en estado de salida 
+docker images = Lista de Imagenes disponibles y sus tamaños 
+docker pull + nombre de la imagen  = Descarga la imagen para utilizarla Luego 
+docker rmi + nombre de la imagen = Permite eliminar una imagen 
+docker exec + nombre contenedor = Ejecuta un comando en el conetenedor de docker [+cat/etc/host para imprimir el contenido ]
+docker run ubuntu sleep 5 = Al agregar una accion, el contenedor se mantiene en funcioanmiento 
+(sleep 5 = se mantiene en suspension por 5 segundos y luego se cierra)
+docker run CursoDockerr/appweb = Ejecutamos una imagen docker desarrollada para una aplicacion web 
+docker attach + ID o nombre = adjunta de vuelta al contenedor en ejecucion 
+docker run -d CursoDockerrr/appweb # va a ejecutar el contenedor de docker en el fondo y volvemos a la solicitud de inmediato , 
+se sigue ejecutando en el backend de forma plena
