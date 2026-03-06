@@ -13,3 +13,5 @@ docker run CursoDockerr/appweb = Ejecutamos una imagen docker desarrollada para 
 docker attach + ID o nombre = adjunta de vuelta al contenedor en ejecucion 
 docker run -d CursoDockerrr/appweb # va a ejecutar el contenedor de docker en el fondo y volvemos a la solicitud de inmediato , 
 se sigue ejecutando en el backend de forma plena
+docker run -it (quay.io/centos/centos:stream9) bash = se usa para ingresar al sistema operativo que este dentro del contenedor de docker 
+docker run -d quay.io/centos/centos:stream9 sleep 20 
