@@ -17,3 +17,4 @@ docker run -it (quay.io/centos/centos:stream9) bash = se usa para ingresar al si
 docker run -d quay.io/centos/centos:stream9 sleep 20 
 docker inspec + nombre del contenedor = nos sirve para visualizar informacion acerca del contenedor 
 docker run -p puerto:puerto id del contenedor 
+docker build -f Dpckerfile -t CursoDockerr/my-custom-app
