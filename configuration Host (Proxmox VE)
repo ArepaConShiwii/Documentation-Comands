@@ -1,0 +1,32 @@
+########################################
+Configuración temporal y permanente
+########################################
+Accede a la terminal de Proxmox y edita el archivo de perfiles:
+$ nano /etc/profile
+Añade las siguientes líneas al final del archivo (sustituye IP_PROXY y PUERTO por tus datos):
+
+export http_proxy="http://IP_PROXY:PUERTO"
+export https_proxy="http://IP_PROXY:PUERTO"
+export ftp_proxy="http://IP_PROXY:PUERTO"
+export no_proxy="localhost,127.0.0.1,IP_DE_PROXMOX"
+############################################################
+Configuración para APT (Actualizaciones)
+############################################################
+Crea un archivo específico para que el gestor de paquetes use el proxy:
+
+$ nano o vi /etc/apt/apt.conf.d/99proxy
+
+Acquire::http::Proxy "http://IP_PROXY:PUERTO/";
+Acquire::https::Proxy "http://IP_PROXY:PUERTO/";
+#########################################################
+🖥️ Configuración en la Máquina Virtual (Linux)
+#########################################################
+Variables de entorno del sistema
+#################################
+Edita /etc/environment para que sea global para todos los usuarios:
+
+http_proxy="http://IP_PROXY:PUERTO/"
+https_proxy="http://IP_PROXY:PUERTO/"
+ftp_proxy="http://IP_PROXY:PUERTO/"
+no_proxy="localhost,127.0.0.1"
+
