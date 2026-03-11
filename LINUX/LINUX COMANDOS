@@ -1,2 +1,9 @@
 ps aux = Genera una lista detallada de todos los procesos que se estan ejecutando en el sistema 
 df -h = Informa sobre el espacio disponible y usado en los discos del sistema en formato legible.
+#####################################
+BUSQUEDAS DE ARCHIVOS
+#####################################
+find /ruta/al/directorio -iname "nombre_a_buscar" =  Para buscar sin importar mayúsculas/minúsculas
+find . -iname "*parte_del_nombre*" = (El . indica que busque en la carpeta actual).
+find /ruta/al/directorio -name "archivo.txt" = find /ruta/al/directorio -name "archivo.txt"
+ls | grep "nombre"
