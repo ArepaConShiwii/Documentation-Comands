@@ -16,5 +16,7 @@ se sigue ejecutando en el backend de forma plena
 docker run -it (quay.io/centos/centos:stream9) bash = se usa para ingresar al sistema operativo que este dentro del contenedor de docker 
 docker run -d quay.io/centos/centos:stream9 sleep 20 
 docker inspec + nombre del contenedor = nos sirve para visualizar informacion acerca del contenedor 
-docker run -p puerto:puerto id del contenedor 
-docker build -f Dpckerfile -t CursoDockerr/my-custom-app
+docker run -p puerto:puerto id del contenedor = desplegar el contenedor con puerto 
+docker run -p 8080:8080 -v /root/nombre-de-la-carpeta:/var/jenkins_home Nombre de la imagen a desplegar 
+docker build -f Dpckerfile -t CursoDockerr/my-custom-app = Crear imagenes en docker     
+docker push CursoDockerr/my-custom-app = subir imagenes a dockerhub
